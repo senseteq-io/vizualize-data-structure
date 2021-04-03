@@ -1,0 +1,26 @@
+[
+  {
+    "name": "User",
+    "fields": [
+      {
+        "name": "email",
+        "dataType": "email"
+      },
+      {
+        "name": "profile",
+        "relationshipType": "belongs_to",
+        "relationship": "Profile"
+      }
+    ]
+  },
+  {
+    "name": "Profile",
+    "fields": [
+      {
+        "name": "skills",
+        "relationshipType": "has_many",
+        "relationship": "Skill"
+      }
+    ]
+  }
+]
